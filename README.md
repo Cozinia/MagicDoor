@@ -166,7 +166,7 @@ RegisterReceiver(receiver, smsFilter);
 
 #### Setting the XAML tags
 
-In Xamarin.Forms, the tags provided below are XML elements used in the `AndroidManifest.xml` file. These elements are used to declare permissions required by the Android operating system for your app to access certain device features or resources.
+In Xamarin.Forms, the tags provided below are XML elements used in the `AndroidManifest.xml` file. These elements are used to declare permissions required by the Android operating system for the app to access certain device features or resources.
 
 ```
   <uses-permission android:name="android.permission.RECEIVE_SMS" />
