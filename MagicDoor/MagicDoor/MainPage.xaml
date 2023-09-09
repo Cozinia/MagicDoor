@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MagicDoor.MainPage">
+
+    <StackLayout Padding="5,20,5,0">
+        <Label Text="Add new user: "  FontSize="Medium" TextColor="Black"/>
+        <Entry Placeholder="Name" x:Name="nameEntry"/>
+        <Entry Placeholder="Phone Number" Keyboard="Telephone" x:Name="phoneEntry" />
+        <Button x:Name="btn_save" Text="Save" Clicked="Btn_save_Clicked" BackgroundColor="#6495ed" />
+
+        <Label Text="Delete user: "  FontSize="Medium" TextColor="Black"/>
+        <Entry Placeholder="Id" x:Name="deleteEntry" Keyboard="Telephone"/>
+        <Button x:Name="btn_delete" Text="Delete" Clicked="Btn_delete_Clicked" BackgroundColor="#ff002b" />
+
+        <Label Text="List of users: " FontSize="Medium" TextColor="Black"/>
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="  ID" Grid.Row="0" Grid.Column="0" TextColor="Black"/>
+            <Label Text="  Name" Grid.Row="0" Grid.Column="1" TextColor="Black"/>
+            <Label Text="Phone number " Grid.Row="0" Grid.Column="2" TextColor="Black"/>
+        </Grid>
+
+
+        <ListView x:Name="contactListView" ItemTapped="ContactListView_SentOpen">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="{Binding ID}" Grid.Column="0" TextColor="Black"/>
+                            <Label Text="{Binding Name}" Grid.Column="1" TextColor="Black"/>
+                            <Label Text="{Binding Phone}" Grid.Column="2" TextColor="Black"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+       
+
+
+    </StackLayout>
+
+</ContentPage>

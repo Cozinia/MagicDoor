@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.magicdoor" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33" />
+	<application android:label="MagicDoor" android:theme="@style/MainTheme">
+	  
+	  <receiver android:name=".SmsReceiver" android:enabled="true" android:exported="false">
+		<intent-filter>
+		  <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+		</intent-filter>
+	  </receiver>
+
+	  <service android:name=".ForgroundServiceSMS" />
+
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.RECEIVE_SMS" />
+  <uses-permission android:name="android.permission.READ_SMS" />
+
+
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
+
+
+
+
+</manifest>
