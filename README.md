@@ -370,7 +370,7 @@ Depending on the Android you're running, the notification should look like this
 
 or like this
 
-![Andorid 13](img\Screenshot_1694297643.png)
+![Andorid 13](https://github.com/Cozinia/MagicDoor/blob/main/img/Screenshot_1694297643.png?raw=true)
 
 
 
