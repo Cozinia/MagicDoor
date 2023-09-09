@@ -353,3 +353,24 @@ private void CreateNotificationChannel()
 
 
 
+
+### How the app looks like
+
+#### Asking for permissions
+![Asking for permissions](https://raw.githubusercontent.com/Cozinia/MagicDoor/main/img/Screenshot_20230910-010539.png?token=GHSAT0AAAAAACHL6VS24OREZ5MHCDOCHGBKZH46NZQ)
+
+
+#### The user interface of the app
+![UI](https://raw.githubusercontent.com/Cozinia/MagicDoor/main/img/Screenshot_2023-09-08-19-23-55-66_a613145c72a70e0166ebad4f316d49e5.jpg?token=GHSAT0AAAAAACHL6VS2AQFLK7SMDE5G4C52ZH46MZA)
+
+#### Notification of the app running in the background
+Depending on the Android you're running, the notification should look like this
+
+![Andorid 10](https://raw.githubusercontent.com/Cozinia/MagicDoor/main/img/Screenshot_1694298442.png?token=GHSAT0AAAAAACHL6VS2NZAPCI4VOTNWL74WZH46O5A)
+
+or like this
+
+![Andorid 13](https://raw.githubusercontent.com/Cozinia/MagicDoor/main/img/Screenshot_1694297643.png?token=GHSAT0AAAAAACHL6VS2IAL4LOLKIAZUEO2IZH46QJA)
+
+
+
